@@ -39,76 +39,76 @@
 }
 
 /* ──────────────────────────────────────────────
-   DESIGN TOKENS — LIGHT (CREAM/IVORY BASE)
+   DESIGN TOKENS — DAILY ROUTINE (CALM/FRESH)
 ────────────────────────────────────────────── */
 
 @layer base {
   :root {
-    --radius: 0.25rem;
+    --radius: 0.75rem;
 
-    /* Warm ivory/cream base */
-    --background: 0.97 0.008 80;
-    --foreground: 0.15 0.02 30;
+    /* Soft warm white base */
+    --background: 0.975 0.006 90;
+    --foreground: 0.18 0.02 260;
 
-    /* Cards — warm white */
-    --card: 0.995 0.003 80;
-    --card-foreground: 0.15 0.02 30;
+    /* Cards — pure white */
+    --card: 1 0 0;
+    --card-foreground: 0.18 0.02 260;
 
     /* Popovers */
-    --popover: 0.995 0.003 80;
-    --popover-foreground: 0.15 0.02 30;
+    --popover: 1 0 0;
+    --popover-foreground: 0.18 0.02 260;
 
-    /* Deep burgundy primary */
-    --primary: 0.38 0.13 15;
-    --primary-foreground: 0.98 0.003 80;
+    /* Teal/green primary — calm and motivational */
+    --primary: 0.52 0.15 185;
+    --primary-foreground: 0.99 0 0;
 
-    /* Warm stone secondary */
-    --secondary: 0.91 0.014 75;
-    --secondary-foreground: 0.25 0.03 30;
+    /* Light teal secondary */
+    --secondary: 0.93 0.025 200;
+    --secondary-foreground: 0.25 0.06 200;
 
-    /* Warm gold accent */
-    --accent: 0.72 0.13 72;
-    --accent-foreground: 0.98 0.003 80;
+    /* Amber accent — energy/morning */
+    --accent: 0.78 0.14 75;
+    --accent-foreground: 0.18 0.04 60;
 
-    /* Muted warm beige */
-    --muted: 0.93 0.012 75;
-    --muted-foreground: 0.45 0.03 40;
+    /* Soft grey-blue muted */
+    --muted: 0.93 0.01 240;
+    --muted-foreground: 0.52 0.03 250;
 
     /* Destructive */
     --destructive: 0.577 0.245 27;
     --destructive-foreground: 0.985 0 0;
 
-    /* Borders / inputs — warm stone */
-    --border: 0.86 0.018 75;
-    --input: 0.92 0.012 75;
-    --ring: 0.38 0.13 15;
+    /* Borders — soft blue-grey */
+    --border: 0.88 0.015 240;
+    --input: 0.92 0.012 240;
+    --ring: 0.52 0.15 185;
 
-    /* Charts — textile palette */
-    --chart-1: 0.38 0.13 15;
-    --chart-2: 0.72 0.13 72;
-    --chart-3: 0.58 0.12 40;
-    --chart-4: 0.55 0.09 120;
-    --chart-5: 0.62 0.14 30;
+    /* Charts */
+    --chart-1: 0.78 0.14 75;
+    --chart-2: 0.62 0.18 260;
+    --chart-3: 0.52 0.15 185;
+    --chart-4: 0.48 0.14 320;
+    --chart-5: 0.62 0.16 155;
 
     /* Sidebar */
-    --sidebar: 0.13 0.025 15;
-    --sidebar-foreground: 0.93 0.008 75;
-    --sidebar-primary: 0.72 0.13 72;
-    --sidebar-primary-foreground: 0.13 0.025 15;
-    --sidebar-accent: 0.38 0.13 15;
-    --sidebar-accent-foreground: 0.98 0.003 80;
-    --sidebar-border: 0.28 0.04 15;
-    --sidebar-ring: 0.72 0.13 72;
+    --sidebar: 0.14 0.03 250;
+    --sidebar-foreground: 0.92 0.01 240;
+    --sidebar-primary: 0.52 0.15 185;
+    --sidebar-primary-foreground: 0.99 0 0;
+    --sidebar-accent: 0.78 0.14 75;
+    --sidebar-accent-foreground: 0.14 0.03 250;
+    --sidebar-border: 0.25 0.03 250;
+    --sidebar-ring: 0.52 0.15 185;
 
-    /* Custom textile tokens */
+    /* Custom routine tokens */
     --burgundy: 0.38 0.13 15;
-    --gold: 0.72 0.13 72;
+    --gold: 0.78 0.14 75;
     --terracotta: 0.58 0.12 40;
-    --cream: 0.97 0.008 80;
-    --warm-stone: 0.88 0.016 75;
-    --surface: 0.94 0.01 75;
-    --surface-raised: 0.98 0.006 80;
-    --ink: 0.18 0.025 30;
+    --cream: 0.975 0.006 90;
+    --warm-stone: 0.9 0.012 240;
+    --surface: 0.95 0.008 240;
+    --surface-raised: 1 0 0;
+    --ink: 0.18 0.02 260;
   }
 
   * {

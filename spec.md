@@ -1,42 +1,39 @@
-# Future Fashion Textile
+# Daily Routine Tracker
 
 ## Current State
-New project. No existing codebase.
+New project. No existing code.
 
 ## Requested Changes (Diff)
 
 ### Add
-- Professional landing page for "Future Fashion Textile" brand
-- Hero section with brand name and tagline
-- About section introducing the textile design studio
-- Print Pattern Design services section showcasing offerings
-- Portfolio/gallery section displaying print pattern work (sample content)
-- Contact form for clients to reach out (name, email, message, submit)
-- Contact messages stored in backend, viewable in admin panel
-- Admin panel (login-protected) to manage portfolio projects and view contact messages
-- Navigation bar with smooth scroll links
-- Footer with brand info and contact details
+- Daily routine/habit tracker app with full CRUD for tasks/habits
+- Tasks organized by time of day: Morning, Afternoon, Evening, Night
+- Mark tasks as complete/incomplete for the current day
+- Daily progress tracking (percentage of tasks completed)
+- Streak tracking (consecutive days of completing all tasks)
+- Admin/management panel to add, edit, delete routine tasks
+- User-friendly dashboard showing today's routine
 
 ### Modify
-- None
+- N/A
 
 ### Remove
-- None
+- N/A
 
 ## Implementation Plan
-1. Backend:
-   - Authorization module for admin login
-   - Portfolio projects CRUD (title, description, category, imageUrl)
-   - Contact messages store (name, email, message, timestamp, read status)
-   - Public queries: getProjects, getServices
-   - Admin queries: getMessages, markMessageRead, addProject, updateProject, deleteProject
 
-2. Frontend:
-   - Navbar with brand logo/name and nav links
-   - Hero section: brand name "Future Fashion Textile", tagline, CTA button
-   - About section: studio introduction
-   - Services section: Print Pattern Design offerings (custom patterns, fabric prints, repeat patterns, color variations)
-   - Portfolio gallery: grid of pattern design cards with image, title, description
-   - Contact section: form with name, email, message fields and submit button
-   - Admin panel: protected route with login, projects management table, messages inbox
-   - Responsive design throughout
+### Backend (Motoko)
+- `RoutineTask` type: id, title, description, category (Morning/Afternoon/Evening/Night), order, isActive
+- `DailyLog` type: date (Text), taskId, completed (Bool)
+- CRUD for RoutineTask: addTask, updateTask, deleteTask, getTasks
+- Daily log: markTaskComplete, markTaskIncomplete, getDailyLog(date)
+- Progress: getDailyProgress(date) returns completed/total count
+- Streak: getStreak() calculates consecutive completed days
+
+### Frontend
+- Dashboard/Home page: Today's date, progress bar, tasks grouped by time of day
+- Each task card: title, category, checkbox to mark complete
+- Progress bar showing % of tasks done today
+- Manage Tasks page: add, edit, delete routine tasks
+- Simple, clean, motivating design
+- Mobile responsive
